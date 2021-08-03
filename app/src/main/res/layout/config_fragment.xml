@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_color"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/view_image"
+            layout="@layout/scan_it_image_layout" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ipAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/dimen_95"
+            android:background="@drawable/rounded_corners_background"
+            android:hint="@string/hint_ip_address"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_image" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@drawable/rounded_corners_background"
+            android:hint="@string/hint_port"
+            android:inputType="text"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="@+id/ipAddress"
+            app:layout_constraintStart_toStartOf="@id/ipAddress"
+            app:layout_constraintTop_toBottomOf="@id/ipAddress" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/dbName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@drawable/rounded_corners_background"
+            android:hint="@string/hint_db_name"
+            android:inputType="text"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="@+id/ipAddress"
+            app:layout_constraintStart_toStartOf="@id/ipAddress"
+            app:layout_constraintTop_toBottomOf="@id/port" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@drawable/rounded_corners_background"
+            android:hint="@string/hint_username"
+            android:inputType="text"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="@+id/ipAddress"
+            app:layout_constraintStart_toStartOf="@id/ipAddress"
+            app:layout_constraintTop_toBottomOf="@id/dbName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@drawable/rounded_corners_background"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="@+id/ipAddress"
+            app:layout_constraintStart_toStartOf="@id/ipAddress"
+            app:layout_constraintTop_toBottomOf="@id/userName" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveConfig"
+            style="@style/CircularButtonStyle.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/dimen_50"
+            android:paddingHorizontal="@dimen/dimen_50"
+            android:paddingVertical="@dimen/dimen_14"
+            android:text="@string/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

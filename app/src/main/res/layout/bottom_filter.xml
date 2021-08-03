@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_384sdp"
+    android:background="@color/gray"
+    app:layout_behavior="com.google.android.material.BottomSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textSize="@dimen/_15ssp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search" />
+    </LinearLayout>
+
+</LinearLayout>

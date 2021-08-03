@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/page_color"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_normal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_135"
+            android:src="@drawable/ic_scan_it"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/dimen_70"
+            android:background="@drawable/rounded_corners_background"
+            android:drawableStart="@drawable/ic_avatar"
+            android:drawablePadding="@dimen/dimen_14"
+            android:hint="@string/hint_login"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginHorizontal="@dimen/dimen_28"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@drawable/rounded_corners_background"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/dimen_14"
+            android:hint="@string/hint_password_am"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingEnd="@dimen/dimen_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            style="@style/CircularButtonStyle.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_big"
+            android:paddingHorizontal="@dimen/dimen_50"
+            android:paddingVertical="@dimen/dimen_14"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/dimen_70"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:alpha="0.3"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/configBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_100"
+            android:background="@drawable/rounded_corners_background"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawablePadding="@dimen/dimen_14"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dimen_14"
+            android:paddingEnd="@dimen/dimen_14"
+            android:text="@string/configs"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/passwordText"
+            app:layout_constraintStart_toStartOf="@id/passwordText"
+            app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

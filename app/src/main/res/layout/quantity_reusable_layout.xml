@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_normal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/quantity_text_view"
+        style="@style/TextViewStyle.Count"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:minWidth="@dimen/_92sdp"
+        android:text="@string/quantity_text"
+        android:textSize="@dimen/text_size_special"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/decrementBtn"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:padding="@dimen/padding_small"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:background="@drawable/rounded_corners_background"
+        android:elevation="2dp"
+        android:src="@drawable/ic_decrement"
+        app:layout_constraintEnd_toStartOf="@+id/quantityCount"
+        app:layout_constraintTop_toBottomOf="@id/quantity_text_view" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/quantityCount"
+        style="@style/EditTextStyle"
+        android:textColor="@color/colorAccent"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="@dimen/_77sdp"
+        android:background="@null"
+        android:textSize="@dimen/text_size_22"
+        android:selectAllOnFocus="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/decrementBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/decrementBtn"
+        tools:text="1"
+        tools:visibility="invisible"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/quantityCountTextView"
+        style="@style/EditTextStyle"
+        android:textColor="@color/colorAccent"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="@dimen/_77sdp"
+        android:background="@null"
+        android:textSize="@dimen/text_size_22"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:selectAllOnFocus="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/decrementBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/decrementBtn"
+        tools:text="1" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/incrementBtn"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:padding="@dimen/padding_small"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:background="@drawable/rounded_corners_background"
+        android:elevation="2dp"
+        android:src="@drawable/ic_increment"
+        app:layout_constraintStart_toEndOf="@+id/quantityCount"
+        app:layout_constraintTop_toBottomOf="@id/quantity_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

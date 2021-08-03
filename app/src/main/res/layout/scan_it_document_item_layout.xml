@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_20"
+    android:showDividers="middle|end">
+
+    <LinearLayout
+        android:id="@+id/topInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/padding_normal"
+        android:showDividers="middle"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextViewStyle.Green.Size_17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextViewStyle.Green.Size_17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/texekatu"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:padding="@dimen/padding_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:src="@drawable/ic_done" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/padding_normal"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/document_date"
+            style="@style/TextViewStyle.Black.Size_17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            tools:text="29.01.21" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/documentInfoName"
+            style="@style/TextViewStyle.Black.Size_17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:gravity="center"
+            tools:text="Պահեստ BCDS" />
+
+        <Space
+            android:layout_weight="0.075"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stateImage"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:padding="@dimen/padding_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:src="@drawable/ic_done" />
+
+        <Space
+            android:layout_weight="0.075"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

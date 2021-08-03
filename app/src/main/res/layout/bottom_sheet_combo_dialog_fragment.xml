@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners_background_white"
+    android:divider="@drawable/divider"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_20"
+    android:paddingVertical="@dimen/dimen_20"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/searchEdT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:hint="@string/search"
+        android:background="@null"
+        style="@style/EditTextStyle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comboRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        tools:itemCount="5"
+        tools:listitem="@layout/combo_item_layout"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_5">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notification_text"
+        style="@style/TextViewStyle.White.Size_13.Bold"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_marginEnd="@dimen/dimen_36"
+        android:background="@drawable/circular_background"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_14"
+        android:layout_marginTop="@dimen/padding_big"
+        android:layout_marginEnd="@dimen/dimen_28"
+        android:background="@drawable/rounded_corners_background"
+        android:gravity="start"
+        android:paddingVertical="@dimen/padding_big"
+        android:paddingStart="@dimen/dimen_20"
+        android:paddingEnd="@dimen/padding_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/actionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_type_bottom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actionNameTv"
+            style="@style/TextViewStyle.Black.Size_17.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            tools:text="@tools:sample/lorem" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
